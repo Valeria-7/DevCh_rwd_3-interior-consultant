@@ -6,6 +6,7 @@
 body {
   background-color: #181719;
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
@@ -33,7 +34,7 @@ body {
 
 .menu-link {
   padding: 8px 0;
-  font-family: "Montserrat", sans-serif;
+
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -68,4 +69,95 @@ body {
   line-height: 16px;
   text-transform: uppercase;
   border: 1px solid #ffffff;
+}
+
+/*          main             */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.main-info {
+  max-width: 410px;
+  width: 100%;
+}
+
+.main-title {
+  margin-bottom: 40px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+.main-description {
+  margin-bottom: 48px;
+  font-weight: 300;
+
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.read-more-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 14px;
+}
+
+.main-design {
+  position: relative;
+}
+
+.design-description {
+  position: absolute;
+  right: 30px;
+  bottom: -100px;
+  width: 368px;
+  padding: 20px 26px;
+  background-color: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.design-info {
+  display: flex;
+  align-items: center;
+}
+
+.designer-photo {
+  margin-right: 20px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.designer-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.designer-job {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+}
+
+.design-year {
+  margin-top: 25px;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
 }
