@@ -161,3 +161,26 @@ body {
   font-size: 24px;
   line-height: 31px;
 }
+
+.footer {
+  margin-top: 230px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.footer-info {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+.footer-link:hover {
+  color: #7e7b7b;
+}
