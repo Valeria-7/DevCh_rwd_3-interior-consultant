@@ -26,6 +26,7 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -40,6 +41,10 @@
 ## Features
 
 This site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) was to build a site to complete the given user stories.
+
+## Acknowledgements
+
+- [Animated Hamburger Menu Tutorial](https://www.youtube.com/watch?v=dIyVTjJAkLw)
 
 ## Contact
 
