@@ -226,7 +226,54 @@ body {
 
 @media (max-width: 540px) {
   .burger-icon {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    width: 28.5px;
+    height: 19px;
+  }
+
+  .burger-button-lines {
+    width: 28.5px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger-button-lines::before,
+  .burger-button-lines::after {
+    content: "";
+    position: absolute;
+    width: 28.5px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger-button-lines::before {
+    transform: translateY(-7px);
+  }
+
+  .burger-button-lines::after {
+    transform: translateY(7px);
+  }
+
+  /*ANIMATION*/
+
+  .burger-icon.open .burger-button-lines {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .burger-icon.open .burger-button-lines::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .burger-icon.open .burger-button-lines::after {
+    transform: rotate(-45deg) translate(35px, 35px);
   }
 
   .header-menu {
