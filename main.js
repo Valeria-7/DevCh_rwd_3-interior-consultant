@@ -6,23 +6,23 @@ let open = false;
 const openMenu = () => {
   menu.classList.add('is-open');
   burgerMenu.classList.add('open');
+  open = true;
 };
 
 const closeMenu = () => {
   menu.classList.remove('is-open');
   burgerMenu.classList.remove('open');
+  open = false;
 };
 
 burgerMenu.addEventListener('click', () => {
   if (open) {
     closeMenu();
-    open = false
   } else {
     openMenu();
-    open = true;
   }
 });
 
 for(let i = 0; i < menuLinks.length; i++) {
-  menuLinks[i].addEventListener('click', closeMenu)
+  menuLinks[i].addEventListener('click', closeMenu);
 }
