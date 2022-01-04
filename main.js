@@ -1,26 +1,25 @@
 const burgerMenu = document.querySelector('.burger-icon');
 const exitMenu = document.querySelector('.exit-icon');
 const menu = document.querySelector('.header-menu');
-const menuLink = document.querySelectorAll('.menu-link');
+const menuLinks = document.querySelectorAll('.menu-link');
 
-burgerMenu.addEventListener('click', () => {
+console.log(menuLinks);
+
+const openMenu = () => {
   menu.classList.add('is-open');
   burgerMenu.classList.toggle('hidden');
   exitMenu.classList.toggle('hidden');
-});
+};
 
-exitMenu.addEventListener('click', () => {
+const closeMenu = () => {
   menu.classList.remove('is-open');
   burgerMenu.classList.toggle('hidden');
   exitMenu.classList.toggle('hidden');
-});
-/*
-menuLink.forEach.addEventListener('click', () => {
-  menu.classList.remove('is-open');
-  burgerMenu.classList.toggle('hidden');
-  exitMenu.classList.toggle('hidden');
-})*/
+};
 
+burgerMenu.addEventListener('click', openMenu);
+exitMenu.addEventListener('click', closeMenu);
 
-
-console.log(menu);
+for(let i = 0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener('click', closeMenu)
+}
